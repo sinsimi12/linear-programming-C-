@@ -1,2 +1,2 @@
-# linear-programming-C++
-This is a homework for Linear Programming 
+# matrix-manipulation C++
+This is a homework for Linear Programming and Matrix Manipulation
