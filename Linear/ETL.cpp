@@ -25,3 +25,27 @@ int main(int argc, char **argv){
 
     Eigen:: MatrixXd m5 (2,2);
     m3 << 1,2,3,4;
+
+    m2 = m2 * m3;
+    std:: cout << "\n m2 = \n" << m2 << std::endl;
+
+    Eigen:: MatrixXd m4(3,2);
+    m4.noaliases() = m3 * m2;
+    std:: cout << "\n m4 = \n" << m4 << std::endl;
+
+    //element and by element operations
+    m3 = 0.5 *m3
+    std:: cout << "\n 0.5*m3 = \n" << m3 << std::endl;
+
+    m5 = m5 + Eigen::MatrixXd::Identity(2,2);
+    std:: cout << "\n m5 = \n" << m5 << std::endl;
+
+    // Matrix Inversion operation
+
+    std:: cout "\n m1.inverse() = \n" << m1.inverse() << std::endl;
+
+
+    return 0;
+
+}
+
